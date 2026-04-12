@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales - Portfolio Réseaux & Télécoms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="portfolio.html#accueil" class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <span>Portfolio HEU--COMBE Nolan</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="portfolio.html#presentation">Présentation</a></li>
+                    <li><a href="portfolio.html#competences">Compétences</a></li>
+                    <li><a href="portfolio.html#experiences">Expériences</a></li>
+                    <li><a href="portfolio.html#projets">Projets</a></li>
+                    <li><a href="portfolio.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container container-section legal-page">
+            <h1>Mentions légales</h1>
+
+            <h2>Éditeur du site</h2>
+            <p>
+                Ce site est édité par <strong>Nolan Heu--Combe</strong>, à titre personnel.
+            </p>
+            <p>
+                Adresse : <strong>à compléter</strong><br>
+                Email : <a href="mailto:combenolan@gmail.com">combenolan@gmail.com</a>
+            </p>
+
+            <h2>Responsable de la publication</h2>
+            <p>
+                Nolan Heu--Combe
+            </p>
+
+            <h2>Hébergement</h2>
+            <p>
+                Le site est hébergé par <strong>GitHub, Inc.</strong> via <strong>GitHub Pages</strong>.
+            </p>
+            <p>
+                GitHub, Inc.<br>
+                88 Colin P. Kelly Jr St<br>
+                San Francisco, CA 94107<br>
+                États-Unis
+            </p>
+            <p>
+                Site de l’hébergeur :
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a>
+            </p>
+
+            <h2>Propriété intellectuelle</h2>
+            <p>
+                L’ensemble des contenus présents sur ce site (textes, images, éléments graphiques, code source,
+                mise en page et structure) est protégé par le droit d’auteur, sauf mention contraire.
+            </p>
+            <p>
+                Toute reproduction, diffusion ou réutilisation sans autorisation préalable est interdite.
+            </p>
+
+            <h2>Données personnelles</h2>
+            <p>
+                Les éventuelles données personnelles collectées via le formulaire de contact ou par email
+                sont traitées conformément à la politique de confidentialité disponible sur ce site.
+            </p>
+            <p>
+                <a href="confidentialite.html">Consulter la politique de confidentialité / RGPD</a>
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Pour toute question concernant le site ou son contenu, vous pouvez me contacter à :
+                <a href="mailto:combenolan@gmail.com">combenolan@gmail.com</a>
+            </p>
+
+            <div class="legal-actions">
+                <a href="portfolio.html" class="btn ghost">Retour au portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 – Portfolio Réseaux & Télécoms</p>
+            <ul class="footer-links">
+                <li><a href="portfolio.html#accueil">Accueil</a></li>
+                <li><a href="portfolio.html#projets">Projets</a></li>
+                <li><a href="portfolio.html#contact">Contact</a></li>
+                <li><a href="confidentialite.html">RGPD / Confidentialité</a></li>
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.main-nav');
+
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('open');
+                toggle.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>
